@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.fragments.LeadAddFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/_8ssp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_30ssp"
+                    android:layout_height="@dimen/_30ssp"
+                    android:src="@drawable/back_icon"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash_screen"
+                android:textColor="@color/blue"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinssemibold"
+                android:gravity="start"
+                android:text="Assign Lead"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/mainBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8ssp"
+                android:layout_marginTop="@dimen/_8ssp"
+                android:background="@drawable/curved_background">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:id="@+id/etNameLO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:hint="Enter Name">
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:id="@+id/etPhoneLO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:hint="Enter Mobile Number">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:id="@+id/etEmailLO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:hint="Enter Email Id">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_width="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:id="@+id/etAddressLO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:hint="Enter Address">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:fontFamily="@font/poppinsregular"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:id="@+id/etCityLO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:hint="Enter City">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/poppinsregular"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:id="@+id/etPinLO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:hint="Enter PIN Code">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:id="@+id/etReqTypeLO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:hint="Enter Requirement Type">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_width="match_parent"
+                        android:maxLength="6"
+                        android:lines="6"
+                        android:inputType="number"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:id="@+id/etReqLO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:hint="Enter Requirement">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_width="match_parent"
+                    android:maxLength="6"
+                    android:lines="6"
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/selectionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/assignButton"
+                    app:cornerRadius="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_8ssp"
+                    android:text="Assign"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2ssp"
+                    android:fontFamily="@font/poppinsregular"
+                    app:iconTint="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black" />
+                <com.google.android.material.button.MaterialButton
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/selectTime"
+                    android:layout_margin="@dimen/_2ssp"
+                    app:cornerRadius="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="@dimen/_8ssp"
+                    android:text="Select Time"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsregular"
+                    app:iconTint="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/selectDate"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_margin="@dimen/_2ssp"
+                    app:cornerRadius="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_8ssp"
+                    android:text="Select Date"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppinsregular"
+                    app:iconTint="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/assignName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Assigned To :"
+                    android:fontFamily="@font/poppinsregular"/>
+                <com.google.android.material.button.MaterialButton
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/assignNameText"
+                    app:cornerRadius="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
+
+                    android:text="Assign"
+                    android:textAlignment="viewStart"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2ssp"
+                    android:fontFamily="@font/poppinsregular"
+                    app:iconTint="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/selectedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Time :"
+                    android:fontFamily="@font/poppinsregular"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/selectedTimeText"
+                    app:cornerRadius="10dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
+                    android:text="selectedTime"
+                    android:textAlignment="viewStart"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2ssp"
+                    android:fontFamily="@font/poppinsregular"
+                    app:iconTint="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/selectedDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Date :"
+                    android:fontFamily="@font/poppinsregular"/>
+                <com.google.android.material.button.MaterialButton
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/selectedDateText"
+                    app:cornerRadius="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
+
+                    android:text="Selected Date"
+                    android:textAlignment="viewStart"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2ssp"
+                    android:fontFamily="@font/poppinsregular"
+                    app:iconTint="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                app:cornerRadius="10dp"
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:text="Submit"
+                android:paddingHorizontal="@dimen/_35ssp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

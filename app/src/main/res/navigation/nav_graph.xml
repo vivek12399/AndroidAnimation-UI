@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LeadsListFragment">
+
+    <fragment
+        android:id="@+id/LeadsListFragment"
+        android:name="com.digitalsoch.dashboard.fragments.LeadListFragment"
+        android:label="@string/list"
+        tools:layout="@layout/fragment_lead_list">
+        <action
+            android:id="@+id/action_LeadsListFragmen_to_LeadsAcceptListFragment"
+            app:destination="@id/LeadsAcceptList" />
+        <action
+            android:id="@+id/action_LeadsListFragmen_to_LeadsAssingedListFragment"
+            app:destination="@id/LeadsAssignedList" />
+        <action
+            android:id="@+id/action_LeadsListFragmen_to_LeadsPendingListFragment"
+            app:destination="@id/LeadsPendingList" />
+        <action
+            android:id="@+id/action_LeadsListFragmen_to_LeadsAddFragment"
+            app:destination="@id/LeadsAddFragment" />
+
+        <action
+            android:id="@+id/action_LeadsListFragmen_to_LeadAccept"
+            app:destination="@id/LeadsAcceptShit" />
+        <action
+            android:id="@+id/action_LeadsListFragmen_to_LeadReject"
+            app:destination="@id/LeadsRejectList" />
+    </fragment>
+    <fragment
+        android:id="@+id/LeadsAddFragment"
+        android:name="com.digitalsoch.dashboard.fragments.LeadAddFragment"
+        android:label="@string/add"
+        tools:layout="@layout/fragment_lead_add">
+
+    </fragment>
+    <fragment
+        android:id="@+id/LeadsAcceptList"
+        android:name="com.digitalsoch.dashboard.fragments.AcceptedLeadListFragment"
+        android:label="@string/add"
+        tools:layout="@layout/fragment_accepted_lead_list">
+        <action
+            android:id="@+id/action_LeadsAcceptListFragment_to_LeadsDetailsFragment"
+            app:destination="@id/LeadsDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LeadsAcceptShit"
+        android:name="com.digitalsoch.dashboard.fragments.LeadAcceptFragment"
+        android:label="@string/add"
+        tools:layout="@layout/fragment_lead_accept">
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/LeadsAssignedList"
+        android:name="com.digitalsoch.dashboard.fragments.AssingnedLeadListFragment"
+        android:label="@string/add"
+        tools:layout="@layout/fragment_assigned_lead_list">
+        <action
+            android:id="@+id/action_LeadsAssignedList_to_LeadsDetailsFragment"
+            app:destination="@id/LeadsDetails" />
+        <action
+            android:id="@+id/action_LeadsAssignedList_to_LeadsAddFragment"
+            app:destination="@id/LeadsAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LeadsDetails"
+        android:name="com.digitalsoch.dashboard.fragments.LeadDetailsFragment"
+        android:label="@string/add"
+        tools:layout="@layout/fragment_lead_details">
+        <action
+            android:id="@+id/action_LeadsDetails_to_LeadsAddFragment"
+            app:destination="@id/LeadsAddFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/LeadsRejectList"
+        android:name="com.digitalsoch.dashboard.fragments.RejectedLeadListFragment"
+        android:label="@string/add"
+        tools:layout="@layout/fragment_reject_lead_list">
+        <action
+            android:id="@+id/action_LeadsRejedctListFragment_to_LeadsAddFragment"
+            app:destination="@id/LeadsAddFragment" />
+        <action
+            android:id="@+id/action_LeadsRejedctListFragment_to_LeadsDetailFragment"
+            app:destination="@id/LeadsDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/LeadsPendingList"
+        android:name="com.digitalsoch.dashboard.fragments.PendingLeadListFragment"
+        android:label="pending"
+        tools:layout="@layout/fragment_pending_lead_list">
+        <action
+            android:id="@+id/action_LeadsPendingListFragment_to_LeadsDetailsFragment"
+            app:destination="@id/LeadsDetails" />
+
+    </fragment>
+</navigation>

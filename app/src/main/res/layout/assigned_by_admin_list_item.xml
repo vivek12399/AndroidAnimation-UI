@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_5ssp"
+    app:cardCornerRadius="@dimen/_8ssp"
+    app:cardElevation="@dimen/_8ssp"
+    android:backgroundTint="@color/item_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10ssp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            android:text="Android Application Development"
+            android:textSize="@dimen/_12ssp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Rajkot"
+                android:textStyle="bold"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_10ssp" />
+            <TextView
+                android:id="@+id/normalTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="*"
+                android:textColor="#474747"
+                android:layout_marginHorizontal="@dimen/_8ssp"
+                android:textSize="@dimen/_10ssp" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/grey"
+                android:text="02 Jul 2024, 02.00 pm"
+
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginVertical="@dimen/_3ssp"
+            android:background="@color/bg"/>
+        <TextView
+            android:id="@+id/requirement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_marginVertical="@dimen/_5ssp"
+            android:text="In this requirement you have to get information about user's needed features and other things.."
+            android:textSize="@dimen/_10ssp" />
+        <TextView
+            android:id="@+id/leadTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/green"
+            android:text="Lead Source"
+            android:textSize="@dimen/_9ssp" />
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="LinkedIn"
+            android:textSize="@dimen/_11ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                app:cornerRadius="10dp"
+                android:id="@+id/btnAssign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:includeFontPadding="false"
+                android:text="+ Assign Lead"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/white"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5ssp"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/poppinsmedium"
+                android:includeFontPadding="false"
+                android:text="Call"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/call"
+                app:iconGravity="start"
+                app:iconPadding="8dp"
+                app:iconTint="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
